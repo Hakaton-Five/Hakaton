@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { CheckboxModule } from 'primeng/checkbox';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import {HeaderComponent} from "./shared/header/header.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CheckboxModule, FormsModule, CommonModule],
+  imports: [RouterOutlet, CheckboxModule, FormsModule, CommonModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
