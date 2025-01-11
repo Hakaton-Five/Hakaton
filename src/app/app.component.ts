@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './shared/header/header.component';
 import { MemberCardComponent } from './shared/components/member-card/member-card.component';
 import { USERS } from './core/mock/users';
+import {SidebarComponent} from "./shared/sidebar/sidebar.component";
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { USERS } from './core/mock/users';
     CommonModule,
     MemberCardComponent,
     HeaderComponent,
+    SidebarComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

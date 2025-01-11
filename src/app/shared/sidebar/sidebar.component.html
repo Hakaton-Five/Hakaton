@@ -1,0 +1,23 @@
+<p-sidebar [visible]="true" [showCloseIcon]="false" [baseZIndex]="1000" styleClass="custom-sidebar">
+  <div class="sidebar-container">
+    <div>
+      <div class="sidebar-header">
+        <h2>SideBar</h2>
+      </div>
+      <ul class="sidebar-menu">
+        <li
+          *ngFor="let item of menuItems"
+          [class.active]="activeItem === item.name"
+          (click)="setActiveItem(item.name)"
+        >
+          <span>{{ item.name }}</span>
+        </li>
+      </ul>
+
+    </div>
+    <div class="upgrade-section">
+      <!--    <img src="path/to/rocket-icon.png" alt="Upgrade Icon" />-->
+      <p>Setting</p>
+    </div>
+  </div>
+</p-sidebar>
