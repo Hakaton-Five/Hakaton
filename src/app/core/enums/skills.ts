@@ -1,18 +1,17 @@
 export enum SKILLS_LEVEL {
-  Beginner ,
-  Intermediate  ,
-  Advanced ,
-  Expert
+  Beginner = 'Beginner',
+  Intermediate = 'Intermediate',
+  Advanced = 'Advanced',
+  Expert = 'Expert',
 }
 
 export enum SKILL_NAMES {
-  React,
-  Angular,
-  Vue,
-  GitHub,
-  Html,
-  Redux,
-  RxJs,
-  Sass,
-
+  React = 'React',
+  Angular = 'Angular',
+  Vue = 'Vue',
+  GitHub = 'GitHub',
+  Html = 'Html',
+  Redux = 'Redux',
+  RxJs = 'RxJs',
+  Sass = 'Sass',
 }
