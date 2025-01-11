@@ -2,8 +2,18 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: blue;
+  font-weight: 700;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
 
   &:disabled {
     cursor: not-allowed;

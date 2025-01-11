@@ -1,3 +1,12 @@
 <router-outlet></router-outlet>
-<app-header></app-header>
-<p-checkbox [(ngModel)]="checked" [binary]="true" label="Hakertsy" />
+
+<div class="leader-board">
+  <app-member-card
+    *ngFor="let user of users; let i = index"
+    [name]="user.name"
+    [surname]="user.surname"
+    [image]="user.photo"
+    [id]="user.id"
+    [step]="i + 1"
+  ></app-member-card>
+</div>
