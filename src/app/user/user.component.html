@@ -1,0 +1,33 @@
+<div>
+  <h2>Filter Users by Skills and Status</h2>
+
+  <!-- Filter by Status -->
+  <label>
+    Status:
+    <select [(ngModel)]="filterStatus" (change)="filterUsers()">
+      <option value="">All</option>
+      <option value="bench">Bench</option>
+      <option value="active">Active</option>
+    </select>
+  </label>
+
+  <!-- Skills Selection (Board or Chips) -->
+  <div>
+    <h4>Select Skills</h4>
+    <div *ngFor="let skill of availableSkills">
+      <button (click)="onSkillsSelectionChanged(skill)">
+        {{ selectedSkills.includes(skill) ? 'Deselect' : 'Select' }} {{ skill }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Display Filtered Users -->
+  <h3>Filtered Users</h3>
+  <ul>
+    <li *ngFor="let user of filteredUsers">
+      {{ user.name }} - Skills: {{ user.skills.join(', ') }} - Status: {{ user.status }}
+    </li>
+  </ul>
+
+  <p *ngIf="filteredUsers.length === 0">No users match the criteria.</p>
+</div>
