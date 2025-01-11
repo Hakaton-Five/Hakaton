@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './shared/header/header.component';
-import { MemberCardComponent } from './shared/components/member-card/member-card.component';
 import { USERS } from './core/mock/users';
 import {SidebarComponent} from "./shared/sidebar/sidebar.component";
+import {UserComponent} from "./user/user.component";
 
 @Component({
   selector: 'app-root',
@@ -14,9 +13,8 @@ import {SidebarComponent} from "./shared/sidebar/sidebar.component";
     RouterOutlet,
     FormsModule,
     CommonModule,
-    MemberCardComponent,
-    HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    UserComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
