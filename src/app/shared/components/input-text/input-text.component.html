@@ -1,0 +1,12 @@
+<div class="form__group">
+    <input
+      type="text"
+      class="form__input"
+      id="input"
+      [placeholder]="inputTextPlaceholder"
+      [(ngModel)]="inputTextValue"
+      (blur)="onBlur()"
+    />
+    <label for="input" class="form__label">{{ inputTextPlaceholder }}</label>
+  </div>
+  
