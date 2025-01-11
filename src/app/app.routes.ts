@@ -11,12 +11,12 @@ import { PlanningComponent } from './pages/planning/planning.component';
 
 export const routes: Routes = [
   { path: ROUTES.Dashboard, component: DashboardComponent },
-  { path: ROUTES.ListEmployer, component: EmployersComponent },
+  { path: `${ROUTES.ListEmployer}/:id`, component: EmployersComponent },
   { path: ROUTES.ListHubs, component: HubsComponent },
   { path: ROUTES.Folder, component: FolderComponent },
   { path: ROUTES.Chat, component: ChatComponent },
   { path: ROUTES.Project, component: ProjectsComponent },
   { path: ROUTES.Planning, component: PlanningComponent },
   { path: '', redirectTo: `/${ROUTES.Dashboard}`, pathMatch: 'full' },
-  { path: '**', redirectTo: `/${ROUTES.Dashboard}` }
+  { path: '**', redirectTo: `/${ROUTES.Dashboard}` },
 ];
