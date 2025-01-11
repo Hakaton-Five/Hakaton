@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Router, RouterOutlet} from '@angular/router';
 import { CheckboxModule } from 'primeng/checkbox';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import {HeaderComponent} from "./shared/header/header.component";
+import {ROUTES} from "./core/constants/routes";
 
 @Component({
   selector: 'app-root',
