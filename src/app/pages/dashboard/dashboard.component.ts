@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
-import { MemberCardComponent } from '../../shared/components/member-card/member-card.component';
-import { FormsModule } from '@angular/forms';
+import {Component} from '@angular/core';
+import {USERS} from "../../core/mock/users";
+import {MemberCardComponent} from "../../shared/components/member-card/member-card.component";
 import { CommonModule } from '@angular/common';
-import { USERS } from '../../core/mock/users';
+import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [MemberCardComponent, FormsModule, CommonModule],
+  imports: [
+    MemberCardComponent,
+    FormsModule,
+    CommonModule
+  ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
 export class DashboardComponent {
-  public users = USERS;
+
+  protected readonly users = USERS;
 }

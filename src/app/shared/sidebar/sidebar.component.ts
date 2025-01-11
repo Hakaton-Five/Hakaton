@@ -18,7 +18,6 @@ import { ROUTES } from '../../core/constants/routes';
 export class SidebarComponent {
   menuItems = [
     { name: 'Dashboard', icon: 'pi pi-th-large', route: ROUTES.Dashboard },
-    { name: 'List employer', icon: 'pi pi-file', route: ROUTES.ListEmployer},
     { name: 'Planning', icon: 'pi pi-book', route: ROUTES.Planning },
     { name: 'Folder', icon: 'pi pi-star', route: ROUTES.Folder },
     { name: 'Chat', icon: 'pi pi-heart', route: ROUTES.Chat },
