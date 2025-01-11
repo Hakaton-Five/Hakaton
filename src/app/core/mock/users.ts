@@ -4,7 +4,7 @@ export const USERS = [
   {
     id: 1,
     name: 'Anatoliy',
-    surname: 'Regenant',
+    surname: 'Rengen',
     photo: 'assets/ico/image.png',
     age: 30,
     totalExperience: 5,
@@ -30,7 +30,7 @@ export const USERS = [
   {
     id: 2,
     name: 'Natalia',
-    surname: 'Oresh',
+    surname: 'Stark',
     photo: 'assets/ico/image.png',
     age: 22,
     totalExperience: 2,
@@ -82,7 +82,7 @@ export const USERS = [
   {
     id: 4,
     name: 'Ivan',
-    surname: 'Shevchenko',
+    surname: 'Calendula',
     photo: 'assets/ico/image.png',
     age: 28,
     totalExperience: 4,
@@ -108,7 +108,7 @@ export const USERS = [
   {
     id: 5,
     name: 'Oleh',
-    surname: 'Ivanov',
+    surname: 'Kluni',
     photo: 'assets/ico/image.png',
     age: 25,
     totalExperience: 3,
@@ -134,7 +134,7 @@ export const USERS = [
   {
     id: 6,
     name: 'Dmytro',
-    surname: 'Kravets',
+    surname: 'Obama',
     photo: 'assets/ico/image.png',
     age: 26,
     totalExperience: 4,
