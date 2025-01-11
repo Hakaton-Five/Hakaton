@@ -1,0 +1,50 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5fb;
+
+  .header-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .search-input {
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .icon {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .user-profile {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .user-photo {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+
+      .user-name {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .dropdown-icon {
+        font-size: 12px;
+      }
+    }
+  }
+}
