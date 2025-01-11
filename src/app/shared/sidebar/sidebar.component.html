@@ -8,9 +8,8 @@
         <li
           *ngFor="let item of menuItems"
           [class.active]="activeItem === item.name"
-          (click)="setActiveItem(item.name)"
         >
-          <span>{{ item.name }}</span>
+          <a class="sidebar-menu__item" [routerLink]="item.route" routerLinkActive="active">{{ item.name }}</a>
         </li>
       </ul>
 
