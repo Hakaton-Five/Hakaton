@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-member-card',
@@ -15,8 +16,10 @@ export class MemberCardComponent {
   @Input() step: number = 1;
   @Input() id: number = 0;
 
+  public router = inject(Router);
+
   public handleSkills(id: number): void {
-    console.log(`Skills: ${id}`);
+    this.router.navigate(['/list-employer', id]);
   }
 
   public handleCareer(id: number): void {

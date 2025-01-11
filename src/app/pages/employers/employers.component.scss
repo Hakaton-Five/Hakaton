@@ -1,0 +1,66 @@
+.detailed-employee {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  background-color: #00989e;
+
+  &__left {
+    .name {
+      color: #ffffff;
+      font-size: 48px;
+    }
+
+    img {
+      margin-top: 40px;
+      width: 500px;
+      height: 600px;
+    }
+  }
+
+  &__right {
+    .skills {
+      color: #ffffff;
+      font-size: 48px;
+    }
+
+    ul {
+      margin-top: 120px;
+      color: #ffffff;
+    }
+
+    li {
+      font-weight: 700;
+      font-size: 32px;
+
+      span {
+        color: #000;
+      }
+    }
+
+    .load-pdf {
+      margin-top: 40px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ffffff;
+      color: #00989e;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+    }
+  }
+}
