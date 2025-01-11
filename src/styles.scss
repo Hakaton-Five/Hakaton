@@ -5,6 +5,11 @@
   border: none;
 }
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 *,
 *::before,
 *::after {
@@ -13,10 +18,12 @@
 
 /* Links */
 
-a, a:link, a:visited  {
+a,
+a:link,
+a:visited {
   text-decoration: none;
 }
 
-a:hover  {
+a:hover {
   text-decoration: none;
 }

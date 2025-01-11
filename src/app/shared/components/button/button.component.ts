@@ -11,11 +11,11 @@ export class ButtonComponent {
   @Input() label: string = '';
   @Input() className: string = '';
   @Input() disabled: boolean = false;
-  @Output() buttonClick = new EventEmitter<void>();
+  @Input() id: number = 0; // New Input to handle ID
 
-  public handleClick(): void {
-    if (!this.disabled) {
-      this.buttonClick.emit();
-    }
+  @Output() buttonClick = new EventEmitter<number>(); // Emit the ID
+
+  handleClick(): void {
+    this.buttonClick.emit(this.id); // Emit the ID when the button is clicked
   }
 }
