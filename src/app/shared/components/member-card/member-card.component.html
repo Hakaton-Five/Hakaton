@@ -1,0 +1,16 @@
+<div class="member-card">
+  <div class="member-card__step">{{ step }}</div>
+  <img [src]="image" alt="photo" />
+  <div class="member-card__name">{{ name }}</div>
+  <div class="member-card__surname">{{ surname }}</div>
+  <app-button
+    label="Skills"
+    [id]="id"
+    (buttonClick)="handleSkills(id)"
+  ></app-button>
+  <app-button
+    label="Career plan"
+    [id]="id"
+    (buttonClick)="handleCareer(id)"
+  ></app-button>
+</div>
