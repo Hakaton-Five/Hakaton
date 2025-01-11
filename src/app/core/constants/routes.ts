@@ -5,4 +5,5 @@ export const ROUTES = {
   Folder: 'folder',
   Chat: 'chat',
   Project: 'project',
+  Planning: 'planning'
 }

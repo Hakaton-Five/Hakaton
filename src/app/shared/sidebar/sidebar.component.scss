@@ -24,27 +24,30 @@
   li {
     display: flex;
     align-items: center;
-    padding: 10px 15px;
     cursor: pointer;
     transition: background 0.3s ease, color 0.3s ease;
 
     i {
       margin-right: 10px;
     }
+  }
 
-    span {
-      font-size: 16px;
-    }
-
-    &:hover {
-      background: #8c62ec;
-      color: white;
-    }
+  &__item {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
 
     &.active {
       background: #8c62ec;
       color: white;
       font-weight: bold;
+
+      &:hover {
+        background: #8c62ec;
+        color: white;
+      }
     }
   }
 }
@@ -53,7 +56,6 @@
 .sidebar-menu li {
   display: flex;
   align-items: center;
-  padding: 10px 0;
   cursor: pointer;
   font-weight: 600;
 }

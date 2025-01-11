@@ -1,1 +1,18 @@
-<p>employers works!</p>
+<div id="employee-details" class="detailed-employee" *ngIf="employee">
+  <div class="detailed-employee__left">
+    <h1 class="name">{{ employee.name }} {{ employee.surname }}</h1>
+    <img [src]="employee.photo" alt="" />
+  </div>
+  <div class="detailed-employee__right">
+    <h2 class="skills">Skills:</h2>
+    <ul>
+      <li *ngFor="let skill of employee.skills">
+        {{ skill.skillName }} - <span>{{ skill.skillLevel }}</span>
+      </li>
+    </ul>
+    <button class="load-pdf" (click)="generatePDF()">Generate PDF</button>
+  </div>
+</div>
+<div *ngIf="!employee">
+  <p>Employee not found.</p>
+</div>

@@ -3,8 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { USERS } from './core/mock/users';
-import {SidebarComponent} from "./shared/sidebar/sidebar.component";
-import {UserComponent} from "./user/user.component";
 
 @Component({
   selector: 'app-root',
@@ -13,8 +11,6 @@ import {UserComponent} from "./user/user.component";
     RouterOutlet,
     FormsModule,
     CommonModule,
-    SidebarComponent,
-    UserComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -22,7 +18,5 @@ import {UserComponent} from "./user/user.component";
 export class AppComponent {
   title = 'Hakaton';
   public checked = true;
-
-  public inputValue = 'Qwerty';
   public users = USERS;
 }
