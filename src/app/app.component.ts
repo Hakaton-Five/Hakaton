@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './shared/header/header.component';
 import { MemberCardComponent } from './shared/components/member-card/member-card.component';
 import { USERS } from './core/mock/users';
-import {SidebarComponent} from "./shared/sidebar/sidebar.component";
+import { SidebarComponent } from "./shared/sidebar/sidebar.component";
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,5 @@ import {SidebarComponent} from "./shared/sidebar/sidebar.component";
 export class AppComponent {
   title = 'Hakaton';
   public checked = true;
-
-  public inputValue = 'Qwerty';
   public users = USERS;
 }
