@@ -43,6 +43,7 @@ export class UserComponent {
   }
 
   getMatchingSkills(userSkills: string[]): number {
+    console.log('Hulk')
     return userSkills.filter(skill => this.selectedSkills.includes(skill)).length;
   }
 }
