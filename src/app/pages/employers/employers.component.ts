@@ -36,18 +36,31 @@ export class EmployersComponent implements OnInit {
       return;
     }
 
-    const canvas = await html2canvas(element);
-    const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF('p', 'mm', 'a4');
+    // Hide the button or elements you don't want in the PDF
+    const button = element.querySelector('button') as HTMLElement;
+    if (button) {
+      button.style.display = 'none'; // Temporarily hide the button
+    }
 
-    const imgWidth = 190;
+    const canvas = await html2canvas(element); // Convert HTML to canvas
+    const imgData = canvas.toDataURL('image/png'); // Convert canvas to image
+    const pdf = new jsPDF('p', 'mm', 'a4'); // Create a new PDF instance
+
+    const imgWidth = 190; // Width of the image in PDF (adjust as needed)
     const pageHeight = pdf.internal.pageSize.height;
     const imgHeight = (canvas.height * imgWidth) / canvas.width;
 
-    let position = 10;
+    let position = 10; // Starting Y position
 
+    // Add image to PDF
     pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
 
+    // Show the button again after generating the PDF
+    if (button) {
+      button.style.display = 'block'; // Restore the button's visibility
+    }
+
+    // Save the PDF
     pdf.save(`${this.employee.name}_${this.employee.surname}_Details.pdf`);
   }
 }
